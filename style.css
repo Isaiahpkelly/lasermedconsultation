@@ -67,6 +67,23 @@ table {
   #titleHead{
     font-size: 20px;
   }
+
+  option:selected{
+    color: white;
+    background: #488f8f;
+  }
   #submitConsultation{
-    margin-left: 27%; 
-   }
+   margin-left: 27%; 
+   margin-bottom: 5%;
+  }
+  #termsAgreement{
+      font-size: 10px;
+  }
+
+  #patientSignature{
+      font-size: 15px;
+  }
+
+  mark{
+      background-color: rgba(33, 79, 228, 0.405);
+  }

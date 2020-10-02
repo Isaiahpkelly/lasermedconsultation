@@ -4067,6 +4067,7 @@ row10.push(estimatedCost10);
       document.querySelector('#showAreaBody7').innerHTML = row7[3];
       document.querySelector('#showCost7').innerHTML = row7[4];
       document.querySelector('#showTotal').innerHTML = ` $${sum}.00`;
+      document.querySelector('#patientSignature').innerHTML = `<mark>I have read and understand LaserMed Skin & Vein Clinic's Policies</mark>_________________________________________________________________${readDate}`
       var date = new Date();
       var readDate = date.toDateString();
       document.querySelector('#welcomePatient').innerHTML = `Hello ${items[0]}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
