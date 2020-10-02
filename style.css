@@ -44,6 +44,20 @@ table {
       margin-top: 2%;
       margin-right: 10%;
   }
+  #laserMedLogoMain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  
+    margin-top: 2%;
+    margin-bottom: -2%;
+    
+}
+#patientNameDiv{
+    margin-left: 20%;
+  
+
+}
 
   #chapmanPic{
       margin-left:10%;

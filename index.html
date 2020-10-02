@@ -12,18 +12,16 @@
     <title>LaserMed Consultation</title>
   </head>
   <body>
-      <div>
-          
+    <div>
+      <img src="https://drjeanchapman.com/wp-content/uploads/2018/10/lasermed-logo.png" class="img-fluid" alt="Responsive image" id="laserMedLogoMain">
       </div>
       <!-------------------------------------------------name----------------------------------------------------------->
     <form id="consultationForm">
         <div class="form-row">
-          <div class="col-5">
+          <div class="col-5" id="patientNameDiv">
             <input type="text" class="form-control" placeholder="Patient Name" id="patientName">
           </div>
-          <div class="col-1">
-            <input type="text" class="form-control" placeholder="Date" id="consultationDate">
-          </div>
+         
         </div>
         <br>
         <!----------------------------------------------1st line of services-------------------------------------------->
@@ -168,14 +166,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost">
-                            <option selected>Est. Cost</option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
        <!---------------------------------------------------2nd line of service---------------------------------------------------->
@@ -319,14 +310,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost2">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
         <!---------------------------------------------------------------3rd line of services--------------------------------------->
@@ -470,14 +454,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost3">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
        <!------------------------------------------------------4th line of services------------------------------------------->
@@ -621,14 +598,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost4">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
       <!------------------------------------------------------------5th line of services------------------------------------------->
@@ -772,14 +742,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost5">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
        <!----------------------------------------------------------6th line of services------------------------------------------------->
@@ -923,14 +886,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost6">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+           
         </div>
         <br>
       <!----------------------------------------------7th line of services------------------------------------------------------>
@@ -1074,14 +1030,7 @@
                         <option value="33">Under the eyes</option>
                       </select>
                     </div>
-            <div class="col-1">
-                        <select class="custom-select custom-select-sm" id="serviceCost7">
-                            <option selected></option>
-                            <option value="1">0</option>
-                            <option value="2">100</option>
-                            
-                          </select>
-                        </div>
+            
         </div>
         <br>
         <button type="button" class="btn btn-primary" id="submitConsultation">Complete Consultation</button>
