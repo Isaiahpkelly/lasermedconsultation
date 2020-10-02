@@ -1,0 +1,1229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LaserMed Consultation</title>
+  </head>
+  <body>
+      <div>
+          
+      </div>
+      <!-------------------------------------------------name----------------------------------------------------------->
+    <form id="consultationForm">
+        <div class="form-row">
+          <div class="col-5">
+            <input type="text" class="form-control" placeholder="Patient Name" id="patientName">
+          </div>
+          <div class="col-1">
+            <input type="text" class="form-control" placeholder="Date" id="consultationDate">
+          </div>
+        </div>
+        <br>
+        <!----------------------------------------------1st line of services-------------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService">
+                <option selected>Select a service</option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+                
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment">
+                    <option selected># of treatments</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule">
+                        <option selected>Treatment Schedule</option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea">
+                        <option selected>Area</option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost">
+                            <option selected>Est. Cost</option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+       <!---------------------------------------------------2nd line of service---------------------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService2">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment2">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule2">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea2">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost2">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+        <!---------------------------------------------------------------3rd line of services--------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService3">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment3">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule3">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea3">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost3">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+       <!------------------------------------------------------4th line of services------------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService4">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment4">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule4">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea4">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost4">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+      <!------------------------------------------------------------5th line of services------------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService5">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment5">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule5">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea5">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost5">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+       <!----------------------------------------------------------6th line of services------------------------------------------------->
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService6">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment6">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule6">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea6">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost6">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+      <!----------------------------------------------7th line of services------------------------------------------------------>
+        <div class="form-row">
+            <div class="col-3">
+            <select class="custom-select custom-select-sm" id="selectService7">
+                <option selected></option>
+                <option value="1">Botox</option>
+                <option value="2">Dysport</option>
+                <option value="3">Jeuveau</option>
+                <option value="4">Botox-Hyperhydrosis</option>
+                <option value="5">Botox Inj Hyperhydrosis</option>
+                <option value="6">Belotero</option>
+                <option value="7">Radiesse</option>
+                <option value="8">Restylane Refyne</option>
+                <option value="9">Restylane Defyne</option>
+                <option value="10">Restylane-1 ml</option>
+                <option value="11">Sculptra</option>
+                <option value="12">Sculptra Vial</option>
+                <option value="13">PRP 1st tx</option>
+                <option value="14">PRP 2nd tx</option>
+                <option value="15">PRP 3rd tx</option>
+                <option value="16">Laser Hair Removal(1hr)</option>
+                <option value="17">Velashape 1tx</option>
+                <option value="18">BodyFX Single Tx</option>
+                <option value="19">Varicose Vein EVLT</option>
+                <option value="20">Sclerotherapy-1tx</option>
+                <option value="21">Dplx Scan Extrem</option>
+                <option value="22">Dplx Scan of Unilateral Extrem</option>
+                <option value="23">Doppler</option>
+                <option value="24">Hose for Sclerotherapy</option>
+                <option value="25">Hose for Vein Surgery</option>
+                <option value="26">Face Spider Veins</option>
+                <option value="27">Foto Facial 1tx</option>
+                <option value="28">Fractionated 45CO2 Chest Add-On</option>
+                <option value="29">Fractionated CO2 with AQ Serum</option>
+                <option value="30">RF Needling - Full Face</option>
+                <option value="31">Tattoo Laser</option>
+                <option value="32">Ulthera - ADD-ONS(Neck/Decolletage)</option>
+                <option value="33">Ulthera - Decolletage</option>
+                <option value="34">Ulthera - Eyes (above brow, lower eyes, crows feet)</option>
+                <option value="35">Ulthera - Full Face</option>
+                <option value="36">Ulthera - Full Neck</option>
+                <option value="37">Ulthera - Lower Face</option>
+                <option value="38">Vivace Series of 3 Treatments</option>
+                <option value="39">Vivace Treatment</option>
+                <option value="40">1st Tx</option>
+                <option value="41">2nd Tx</option>
+                <option value="42">3rd Tx</option>
+                <option value="43">PCA Chemiacal Package of 3</option>
+                <option value="44">Acne Facial</option>
+                <option value="45">Deep Cleansing Facial</option>
+                <option value="46">Anti-Aging Facial</option>
+                <option value="47">Brow Wax</option>
+                <option value="48">Brow Tint</option>
+                <option value="49">Lash Tint</option>
+                <option value="50">HydrFacial w Growth Factor</option>
+                <option value="51">Dermaplaning</option>
+                <option value="52">Injection Fee</option>
+                <option value="53">Abdomen-full</option>
+                <option value="54">Abdomen-partial</option>
+                <option value="55">Arms-full</option>
+                <option value="56">Arm-lower</option>
+                <option value="57">Arms-upper</option>
+                <option value="58">Back-full</option>
+                <option value="59">Back-partial</option>
+                <option value="60">Bikini-full</option>
+                <option value="61">Bikini-partial</option>
+                <option value="62">Buttocks</option>
+                <option value="63">Chest</option>
+                <option value="64">Chin</option>
+                <option value="65">Ears</option>
+                <option value="66">Eyebrows</option>
+                <option value="67">Face-full</option>
+                <option value="68">Face-partial</option>
+                <option value="69">Hair line</option>
+                <option value="70">Legs-full</option>
+                <option value="71">Legs-lower</option>
+                <option value="72">Legs-upper</option>
+                <option value="73">Lip</option>
+                <option value="74">Neck</option>
+                <option value="75">Nipples</option>
+                <option value="76">Underarms</option>
+              </select>
+            </div>
+            <div class="col-2">
+                <select class="custom-select custom-select-sm" id="selectTreatment7">
+                    <option selected></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="treatmentSchedule7">
+                        <option selected></option>
+                        <option value="1">weekly</option>
+                        <option value="2">bi-weekly</option>
+                        <option value="3">once a month</option>
+                        <option value="4">2 month's apart</option>
+                        <option value="5">3 month's apart</option>
+                        <option value="6">6 month's apart</option>
+                        <option value="7">1 year apart</option>
+                      </select>
+                    </div>
+            <div class="col-2">
+                    <select class="custom-select custom-select-sm" id="bodyArea7">
+                        <option selected></option>
+                        <option value="1">Abdomen-full</option>
+                        <option value="2">Abdomen-partial</option>
+                        <option value="3">Arms-full</option>
+                        <option value="4">Arm-lower</option>
+                        <option value="5">Arms-upper</option>
+                        <option value="6">Back-full</option>
+                        <option value="7">Back-partial</option>
+                        <option value="8">Bikini-full</option>
+                        <option value="9">Bikini-partial</option>
+                        <option value="10">Buttocks</option>
+                        <option value="11">Chest</option>
+                        <option value="12">Chin</option>
+                        <option value="13">Ears</option>
+                        <option value="14">Eyebrows</option>
+                        <option value="15">Face-full</option>
+                        <option value="16">Face-partial</option>
+                        <option value="17">Hair line</option>
+                        <option value="18">Legs-full</option>
+                        <option value="19">Legs-lower</option>
+                        <option value="20">Legs-upper</option>
+                        <option value="21">Lip</option>
+                        <option value="22">Neck</option>
+                        <option value="23">Nipples</option>
+                        <option value="24">Underarms</option>
+                        <option value="25">Forehead</option>
+                        <option value="26">Crows feet</option>
+                        <option value="27">Between the brow</option>
+                        <option value="28">Marionette line</option>
+                        <option value="29">Back-partial</option>
+                        <option value="30">Cheeks</option>
+                        <option value="31">Jaw line</option>
+                        <option value="32">Saddlebags</option>
+                        <option value="33">Under the eyes</option>
+                      </select>
+                    </div>
+            <div class="col-1">
+                        <select class="custom-select custom-select-sm" id="serviceCost7">
+                            <option selected></option>
+                            <option value="1">0</option>
+                            <option value="2">100</option>
+                            
+                          </select>
+                        </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary" id="submitConsultation">Complete Consultation</button>
+      </form>
+      <div id = 'displayContent'>
+      <img src="https://drjeanchapman.com/wp-content/uploads/2018/10/image1-600x600.png" class="thumbnail" id="chapmanPic" alt="Responsive image" height="200px" width="200px" >
+      <img src="https://drjeanchapman.com/wp-content/uploads/2018/10/lasermed-logo.png" class="img-fluid float-right" alt="Responsive image" id="laserMedLogo">
+      <br>
+      <p>Website: www.drjeanchappman.com <br>
+      Phone: 678-990-4900</p>
+      <p id="titleHead">Physician: Dr Jean Chapman # AtlantasFavBeautyDoc</p>
+      <br>
+      <p id="todaysDate"></p>
+      <p id="welcomePatient"></p>
+      
+      <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4"></h1>
+          <p></p>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item"  id="showServices">Cras justo odio</li>
+            <li class="list-group-item"  id="showTreatment">Dapibus ac facilisis in</li>
+            <li class="list-group-item"  id="showSchedule">Morbi leo risus</li>
+            <li class="list-group-item"  id="showAreaBody">Dapibus ac facilisis in</li>
+            <li class="list-group-item"  id="showCost">Morbi leo risus</li>
+          </ul>
+        </div>
+        </div> -->
+        <table class="table" id="consultationResults">
+          <thead>
+            <tr id="tableHeader">
+              <th scope="col">#</th>
+              <th scope="col">Service</th>
+              <th scope="col">Service Area</th>
+              <th scope="col"># of treatments</th>
+              <th scope="col">Treatment Schedule</th>
+              <th scope="col">Estimated Cost</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td id="showServices"></td>
+              <td id="showAreaBody"></td>
+              <td id="showTreatment"></td>
+              <td id="showSchedule"></td>
+              <td id="showCost"></td>
+            </tr>
+            <tr>
+              <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td id="showServices2"></td>
+              <td id="showAreaBody2"></td>
+              <td id="showTreatment2"></td>
+              <td id="showSchedule2"></td>
+              <td id="showCost2"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td id="showServices3"></td>
+              <td id="showAreaBody3"></td>
+              <td id="showTreatment3"></td>
+              <td id="showSchedule3"></td>
+              <td id="showCost3"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td id="showServices4"></td>
+              <td id="showAreaBody4"></td>
+              <td id="showTreatment4"></td>
+              <td id="showSchedule4"></td>
+              <td id="showCost4"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td id="showServices5"></td>
+              <td id="showAreaBody5"></td>
+              <td id="showTreatment5"></td>
+              <td id="showSchedule5"></td>
+              <td id="showCost5"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td id="showServices6"></td>
+              <td id="showAreaBody6"></td>
+              <td id="showTreatment6"></td>
+              <td id="showSchedule6"></td>
+              <td id="showCost6"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td id="showServices7"></td>
+              <td id="showAreaBody7"></td>
+              <td id="showTreatment7"></td>
+              <td id="showSchedule7"></td>
+              <td id="showCost7"></td>
+            </tr>
+            <th scope="row">Notes:</th>
+              
+            <tr>
+              <th scope="row"></th>
+              <td id="showServic"></td>
+              <td id="showAreaBod"></td>
+              <td id="showTreatmen"></td>
+              <td id="showSchedul">Est. Total</td>
+              <td id="showTotal"></td>
+            </tr>
+            
+          </tbody>
+        </table>
+        <div>
+          <p>Prices quoted are good for 30 days. This summary is a rough estimation based on today's assesment, but may vary based on each individual
+            response to treatments, as well as, the change in patients request or expectations. All regular-priced treatments are refundable for 30 
+            after purchase. After 30 days, a LasaerMed credit will be issued.
+          </p>
+        </div>
+        <div id="demo"></div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>  
+</body>
+</html>
