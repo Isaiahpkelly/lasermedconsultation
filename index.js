@@ -4105,12 +4105,6 @@ row10.push(estimatedCost10);
       document.querySelector('#patientSignature').innerHTML = `<mark>I have read and understand LaserMed Skin & Vein Clinic's Policies</mark>_________________________________________________________________${readDate}`
       var date = new Date();
       var readDate = date.toDateString();
-      if(items[0] !== ""){
-       
-        document.querySelector('#welcomePatient').innerHTML = `Hello ${items[0]}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
-      } else{
-        document.querySelector('#welcomePatient').innerHTML = `You forgot to enter your patient's name. Below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
-      }
       // document.querySelector('#todaysDate').innerHTML = date.toDateString();
       // document.querySelector('#showServices8').innerHTML = row8[0];
       // document.querySelector('#showTreatment8').innerHTML = row8[1];
@@ -4127,22 +4121,31 @@ row10.push(estimatedCost10);
       // document.querySelector('#showSchedule10').innerHTML = row10[2];
       // document.querySelector('#showAreaBody10').innerHTML = row10[3];
       // document.querySelector('#showCost10').innerHTML = row10[4];
-
-       // creates a table row
+      
+      // creates a table row
       var row = document.createElement("tr");
       // for (var j = 0; j < row2.length; j++) {
-      //   // Create a <td> element and a text node, make the text
-      //   // node the contents of the <td>, and put the <td> at
-      //   // the end of the table row
-      //   var cell = document.createElement("td");
-      //   var cellText = document.createTextNode("cell in row "+items[i]+", column "+j);
-      //   cell.appendChild(cellText);
-      //   row.appendChild(cell);
-      // }
-  
-      // add the row to the end of the table body
-      // tblBody.appendChild(row);
-    }
+        //   // Create a <td> element and a text node, make the text
+        //   // node the contents of the <td>, and put the <td> at
+        //   // the end of the table row
+        //   var cell = document.createElement("td");
+        //   var cellText = document.createTextNode("cell in row "+items[i]+", column "+j);
+        //   cell.appendChild(cellText);
+        //   row.appendChild(cell);
+        // }
+        
+        // add the row to the end of the table body
+        // tblBody.appendChild(row);
+      }
+              if(items[0] !== ""){
+               
+                document.querySelector('#welcomePatient').innerHTML = `Hello ${items[0]}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+              } else{
+                // document.querySelector('#welcomePatient').innerHTML = `You forgot to enter your patient's name. Below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+                let patientNameReminder = prompt("You forgot to enter your patients name. Please enter their name below")
+                document.querySelector('#welcomePatient').innerHTML = `Hello ${patientNameReminder}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+                
+              }
   
     // put the <tbody> in the <table>
     // tbl.appendChild(tblBody);
