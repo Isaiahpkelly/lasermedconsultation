@@ -78,11 +78,16 @@ table {
   }
 
   #patientSignature{
-      font-size: 15px;
+      font-size: 10px;
   }
 
   mark{
       background-color: rgba(33, 79, 228, 0.405);
+  }
+
+  mark2{
+      background-color: yellow;
+      color: black;
   }
    #selectService option[value="1"] {
     background: rgba(184, 123, 123, 0.3);
