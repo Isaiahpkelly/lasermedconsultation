@@ -75,42 +75,49 @@ $(document).ready(function(){
       "patientName": $('#patientName').val().trim(),
       // "consultaionDate": $('#consultationDate').val().trim(),
       "service": $('#selectService :selected').text(),
+      "howMany": $('#howMany :selected').text(),
       "treatmentAmount": $('#selectTreatment :selected').text(),
       "treatmentSchedule": $('#treatmentSchedule :selected').text(),
       "bodyArea": $('#bodyArea :selected').text(),
       "estimatedCost": $('#serviceCost :selected').text(),
 
       "service2": $('#selectService2 :selected').text(),
+      "howMany2": $('#howMany2 :selected').text(),
       "treatmentAmount2": $('#selectTreatment2 :selected').text(),
       "treatmentSchedule2": $('#treatmentSchedule2 :selected').text(),
       "bodyArea2": $('#bodyArea2 :selected').text(),
       "estimatedCost2": $('#serviceCost2 :selected').text(),
 
       "service3": $('#selectService3 :selected').text(),
+      "howMany3": $('#howMany3 :selected').text(),
       "treatmentAmount3": $('#selectTreatment3 :selected').text(),
       "treatmentSchedule3": $('#treatmentSchedule3 :selected').text(),
       "bodyArea3": $('#bodyArea3 :selected').text(),
       "estimatedCost3": $('#serviceCost3 :selected').text(),
 
       "service4": $('#selectService4 :selected').text(),
+      "howMany4": $('#howMany4 :selected').text(),
       "treatmentAmount4": $('#selectTreatment4 :selected').text(),
       "treatmentSchedule4": $('#treatmentSchedule4 :selected').text(),
       "bodyArea4": $('#bodyArea4 :selected').text(),
       "estimatedCost4": $('#serviceCost4 :selected').text(),
 
       "service5": $('#selectService5 :selected').text(),
+      "howMany5": $('#howMany5 :selected').text(),
       "treatmentAmount5": $('#selectTreatment5 :selected').text(),
       "treatmentSchedule5": $('#treatmentSchedule5 :selected').text(),
       "bodyArea5": $('#bodyArea5 :selected').text(),
       "estimatedCost5": $('#serviceCost5 :selected').text(),
 
       "service6": $('#selectService6 :selected').text(),
+      "howMany6": $('#howMany6 :selected').text(),
       "treatmentAmount6": $('#selectTreatment6 :selected').text(),
       "treatmentSchedule6": $('#treatmentSchedule6 :selected').text(),
       "bodyArea6": $('#bodyArea6 :selected').text(),
       "estimatedCost6": $('#serviceCost6 :selected').text(),
 
       "service7": $('#selectService7 :selected').text(),
+      "howMany7": $('#howMany7 :selected').text(),
       "treatmentAmount7": $('#selectTreatment7 :selected').text(),
       "treatmentSchedule7": $('#treatmentSchedule7 :selected').text(),
       "bodyArea7": $('#bodyArea7 :selected').text(),
@@ -140,6 +147,7 @@ $(document).ready(function(){
     patientName = newConsultation.patientName;
     consultaionDate = newConsultation.consultaionDate;
     service = newConsultation.service;
+    howMany = newConsultation.howMany;
     treatmentAmount = newConsultation.treatmentAmount;
     treatmentSchedule = newConsultation.treatmentSchedule;
     bodyArea = newConsultation.bodyArea;
@@ -680,16 +688,22 @@ $(document).ready(function(){
 
     
 
-
+    function addSigns(num){
+    return "$"+num+".00"
+    }
+    console.log('cost row 1---->',estimatedCost)
+    console.log('cost row addsigns()---->',addSigns(estimatedCost))
+    document.querySelector('#showCost').innerHTML = addSigns(estimatedCost*howMany)
     items.push(patientName);
     items.push(consultaionDate);
     items.push(service);
     items.push(treatmentAmount);
     items.push(treatmentSchedule);
     items.push(bodyArea);
-    items.push(estimatedCost);
+    items.push(addSigns(estimatedCost));
 //----------------------------------------------------service2--------------------------------------------   
     service2 = newConsultation.service2;
+    howMany2 = newConsultation.howMany2;
     treatmentAmount2= newConsultation.treatmentAmount2;
     treatmentSchedule2 = newConsultation.treatmentSchedule2;
     bodyArea2 = newConsultation.bodyArea2;
@@ -1228,7 +1242,7 @@ $(document).ready(function(){
       default:
         break;
     }
-
+    document.querySelector('#showCost2').innerHTML = addSigns(estimatedCost2*howMany2 ) 
    row2.push(service2);
    row2.push(treatmentAmount2);
    row2.push(treatmentSchedule2);
@@ -1236,6 +1250,7 @@ $(document).ready(function(){
    row2.push(estimatedCost2);
 //---------------------------------------------------------service3----------------------------------------
    service3 = newConsultation.service3;
+   howMany3 = newConsultation.howMany3;
    treatmentAmount3= newConsultation.treatmentAmount3;
    treatmentSchedule3 = newConsultation.treatmentSchedule3;
    bodyArea3 = newConsultation.bodyArea3;
@@ -1774,6 +1789,7 @@ $(document).ready(function(){
     default:
       break;
   }
+  document.querySelector('#showCost3').innerHTML = addSigns(estimatedCost3*howMany3)
 
   row3.push(service3);
   row3.push(treatmentAmount3);
@@ -1782,6 +1798,7 @@ $(document).ready(function(){
   row3.push(estimatedCost3);
 
   service4 = newConsultation.service4;
+  howMany4 = newConsultation.howMany4;
   treatmentAmount4= newConsultation.treatmentAmount4;
   treatmentSchedule4 = newConsultation.treatmentSchedule4;
   bodyArea4 = newConsultation.bodyArea4;
@@ -2320,6 +2337,8 @@ $(document).ready(function(){
       break;
   }
 
+  document.querySelector('#showCost4').innerHTML = addSigns(estimatedCost4*howMany4)
+
  row4.push(service4);
  row4.push(treatmentAmount4);
  row4.push(treatmentSchedule4);
@@ -2327,6 +2346,7 @@ $(document).ready(function(){
  row4.push(estimatedCost4);
 
  service5 = newConsultation.service5;
+ howMany5 = newConsultation.howMany5;
  treatmentAmount5= newConsultation.treatmentAmount5;
  treatmentSchedule5 = newConsultation.treatmentSchedule5;
  bodyArea5 = newConsultation.bodyArea5;
@@ -2865,6 +2885,8 @@ $(document).ready(function(){
     break;
 } 
 
+document.querySelector('#showCost5').innerHTML = addSigns(estimatedCost5*howMany5)
+
 row5.push(service5);
 row5.push(treatmentAmount5);
 row5.push(treatmentSchedule5);
@@ -2872,6 +2894,7 @@ row5.push(bodyArea5);
 row5.push(estimatedCost5);
 
 service6 = newConsultation.service6;
+howMany6 = newConsultation.howMany6;
 treatmentAmount6= newConsultation.treatmentAmount6;
 treatmentSchedule6= newConsultation.treatmentSchedule6;
 bodyArea6 = newConsultation.bodyArea6;
@@ -3410,6 +3433,8 @@ switch (service6) {
     break;
 }  
 
+document.querySelector('#showCost6').innerHTML = addSigns(estimatedCost6*howMany6)
+
 row6.push(service6);
 row6.push(treatmentAmount6);
 row6.push(treatmentSchedule6);
@@ -3417,6 +3442,7 @@ row6.push(bodyArea6);
 row6.push(estimatedCost6);
 
 service7 = newConsultation.service7;
+howMany7 = newConsultation.howMany7;
 treatmentAmount7= newConsultation.treatmentAmount7;
 treatmentSchedule7 = newConsultation.treatmentSchedule7;
 bodyArea7 = newConsultation.bodyArea7;
@@ -3960,7 +3986,7 @@ for(i = 0; i <cost.length; i++){
 
 }
 console.log('this is the sum of consultation cost--->',sum);
-
+document.querySelector('#showCost7').innerHTML = addSigns(estimatedCost7*howMany7)
 
 row7.push(service7);
 row7.push(treatmentAmount7);
@@ -4031,7 +4057,13 @@ row10.push(estimatedCost10);
         textID = document.createTextNode(items[i]);
         cell.appendChild(textID);
       }
-      document.querySelector('#showServices').innerHTML = items[2];
+      
+
+      const div1 = document.getElementById('selectService');
+      const align = div1.getAttribute('scale');
+      console.log('should say unit--->',align)
+
+      document.querySelector('#showServices').innerHTML = `${items[2]}*${howMany}`;
       document.querySelector('#showTreatment').innerHTML = items[3];
       document.querySelector('#showSchedule').innerHTML = items[4];
       document.querySelector('#showAreaBody').innerHTML = items[5];
@@ -4050,22 +4082,22 @@ row10.push(estimatedCost10);
       document.querySelector('#showTreatment4').innerHTML = row4[1];
       document.querySelector('#showSchedule4').innerHTML = row4[2];
       document.querySelector('#showAreaBody4').innerHTML = row4[3];
-      document.querySelector('#showCost4').innerHTML = row4[4];
+      // document.querySelector('#showCost4').innerHTML = row4[4];
       document.querySelector('#showServices5').innerHTML = row5[0];
       document.querySelector('#showTreatment5').innerHTML = row5[1];
       document.querySelector('#showSchedule5').innerHTML = row5[2];
       document.querySelector('#showAreaBody5').innerHTML = row5[3];
-      document.querySelector('#showCost5').innerHTML = row5[4];
+      // document.querySelector('#showCost5').innerHTML = row5[4];
       document.querySelector('#showServices6').innerHTML = row6[0];
       document.querySelector('#showTreatment6').innerHTML = row6[1];
       document.querySelector('#showSchedule6').innerHTML = row6[2];
       document.querySelector('#showAreaBody6').innerHTML = row6[3];
-      document.querySelector('#showCost6').innerHTML = row6[4];
+      // document.querySelector('#showCost6').innerHTML = row6[4];
       document.querySelector('#showServices7').innerHTML = row7[0];
       document.querySelector('#showTreatment7').innerHTML = row7[1];
       document.querySelector('#showSchedule7').innerHTML = row7[2];
       document.querySelector('#showAreaBody7').innerHTML = row7[3];
-      document.querySelector('#showCost7').innerHTML = row7[4];
+      // document.querySelector('#showCost7').innerHTML = row7[4];
       document.querySelector('#showTotal').innerHTML = ` $${sum}.00`;
       document.querySelector('#patientSignature').innerHTML = `<mark>I have read and understand LaserMed Skin & Vein Clinic's Policies</mark>_________________________________________________________________${readDate}`
       var date = new Date();
@@ -4140,6 +4172,8 @@ row10.push(estimatedCost10);
     console.log(newConsultation);
     document.getElementById("consultationForm").style.display = "none";
     document.getElementById("displayContent").style.display = "block";
+
+  
   })
 
 

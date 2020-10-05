@@ -68,10 +68,7 @@ table {
     font-size: 20px;
   }
 
-  option:selected{
-    color: white;
-    background: #488f8f;
-  }
+  
   #submitConsultation{
    margin-left: 27%; 
    margin-bottom: 5%;
@@ -86,4 +83,293 @@ table {
 
   mark{
       background-color: rgba(33, 79, 228, 0.405);
+  }
+   #selectService option[value="1"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="2"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="3"] {
+    background:rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="4"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="5"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="6"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="7"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="8"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="9"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="10"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="11"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="12"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="13"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="14"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="15"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   /* #selectService option[value="16"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+
+  #selectService option[value="17"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="18"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="19"] {
+    background:rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="20"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="21"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="22"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="23"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="24"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="25"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="26"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="27"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="28"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="29"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="30"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="31"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="32"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+  #selectService option[value="33"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="34"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="35"] {
+    background:rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="36"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="37"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="38"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="39"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="40"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="41"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="42"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="43"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="44"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="45"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="46"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="47"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="48"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+  #selectService option[value="49"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="50"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="51"] {
+    background:rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="52"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="53"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="54"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="55"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="56"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="57"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="58"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="59"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="60"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="61"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="62"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="63"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="64"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+  #selectService option[value="65"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="66"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="67"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  #selectService option[value="68"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="69"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="70"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="71"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+  #selectService option[value="72"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="73"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="74"] {
+    background: rgba(250, 250, 250, 0.3);
+  }
+  #selectService option[value="75"] {
+    background: rgba(184, 123, 123, 0.3);
+  }
+  
+   #selectService option[value="76"] {
+    background: rgba(250, 250, 250, 0.3);
+  } */
+
+  th {
+    height: 50%;
   }
