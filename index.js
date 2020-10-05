@@ -694,6 +694,9 @@ $(document).ready(function(){
     console.log('cost row 1---->',estimatedCost)
     console.log('cost row addsigns()---->',addSigns(estimatedCost))
     document.querySelector('#showCost').innerHTML = addSigns(estimatedCost*howMany)
+
+   
+
     items.push(patientName);
     items.push(consultaionDate);
     items.push(service);
@@ -4102,7 +4105,12 @@ row10.push(estimatedCost10);
       document.querySelector('#patientSignature').innerHTML = `<mark>I have read and understand LaserMed Skin & Vein Clinic's Policies</mark>_________________________________________________________________${readDate}`
       var date = new Date();
       var readDate = date.toDateString();
-      document.querySelector('#welcomePatient').innerHTML = `Hello ${items[0]}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+      if(items[0] !== ""){
+       
+        document.querySelector('#welcomePatient').innerHTML = `Hello ${items[0]}, below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+      } else{
+        document.querySelector('#welcomePatient').innerHTML = `You forgot to enter your patient's name. Below is a summary of your consultation on ${readDate}. The estimated price is highlighted at the bottom.`;
+      }
       // document.querySelector('#todaysDate').innerHTML = date.toDateString();
       // document.querySelector('#showServices8').innerHTML = row8[0];
       // document.querySelector('#showTreatment8').innerHTML = row8[1];
