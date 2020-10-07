@@ -74,7 +74,10 @@ table {
   #titleHead{
     font-size: 20px;
   }
-
+#emailConsultation{
+    margin-left: 75%;
+   
+}
   
   #submitConsultation{
    margin-left: 40%;
